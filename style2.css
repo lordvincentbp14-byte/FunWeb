@@ -1,0 +1,90 @@
+body {
+  font-family: 'segoe ui', sans-serif;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Sidebar styling */
+aside {
+  width: 220px;
+  background-color: #000269cc;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+aside md-elevation {
+  padding: 8px;
+}
+
+aside a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  display: block;
+}
+/* Sidebar link hover effect */
+aside a:hover {
+     /* Text color changes on hover */
+  background-color: #1a1a7acc;  /* Optional: subtle background change */
+  transition: all 0.3s ease;
+}
+
+
+aside a.selected {
+  background-color: #8d78ff;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(75, 26, 26, 0.1);
+}
+
+h1, h2, h3 {
+  color: #000000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #1c1b63;
+  color: #fff;
+}
+
+code {
+  background-color: #eee;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+i {
+  display: block;
+  margin-bottom: 16px;
+  font-style: italic;
+  color: #555;
+}
+div {
+    font-size: 40px;
+}

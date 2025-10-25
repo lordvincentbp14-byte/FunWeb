@@ -1,88 +1,33 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>FunWeb</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FunWeb - Sidebar with Icons</title>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5b2/RQd3hPiYo7n3v2/zyfXk4vJfM0uJrD0HRkg2ZZ9TfZJgF6d9wZ5yz7l3x8jJY2S9z6k3xKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css" />
+
+
 </head>
 <body>
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 12px;
-    background: url("image12.png") no-repeat center center fixed;
-    background-size: cover; /* makes the image fill the whole screen */
-    color: black;
-}
 
+<aside>
+<div>FunWeb</div>
+ 
+  <a href="explore.html">Motion</a>
+  <a href="FORCE.HTML">Force</a>
+  <a href="MASS.HTML">Mass</a>
+  <a href="ACCELERATION.HTML">Acceleration</a>
+  <a href="ENERGY.HTML">Energy</a>
+  <a href="NEWTONS-LAWS.HTML"><i class="fas fa-project-diagram"></i> Newton’s Laws</a>
+</aside>
 
-/* centers the grid container only */
-.parent {
-    display: grid;
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(2, 150px);
-    gap: 20px;
-    justify-content: center; /* centers grid horizontally */
-    text-align: center;
-    margin-top: 100px; /* adjust spacing from top */
-}
+<main>
+  <h1>Welcome to FunWeb</h1>
+  <p>Select a topic from the sidebar to explore concepts in Physics.</p>
+</main>
 
-
-.parent div {
-    border: 2px solid #333;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    transition: 0.3s;
-}
-
-
-.parent div:hover {
-    background: #e3f2fd;
-    transform: scale(1.15);
-    cursor: pointer;
-}
-
-
-a {
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
-}
-
-
-/* --- Header Animation --- */
-header h1 {
-    text-align: center;
-    padding-top: 300px;
-    font-size: 50px;
-    color: white;
-    -webkit-text-stroke: 1px black;
-    transition: transform 0.4s ease, text-shadow 0.4s ease;
-}
-
-
-/* --- Header Hover Effect --- */
-header h1:hover {
-    transform: scale(1.2);
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-}
-a {
-    font-weight: bold;
-}
-</style>
-
-<header>
-    <h1>FunWeb</h1>
-</header>
-
-
-<div class="parent">
-    <div class="div1"><a href="explore.html">Explore!</a></div>
-    <div class="div2"><a href="">Web</a></div>
-    <div class="div3"><a href="">About</a></div>
-    <div class="div4"><a href="">Contact</a></div>
-</div>
 </body>
-
-
+</html>
