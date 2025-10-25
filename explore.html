@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FunWeb - Explore Motion (MD3)</title>
+
+<!-- MD3 Web import map -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5b2/RQd3hPiYo7n3v2/zyfXk4vJfM0uJrD0HRkg2ZZ9TfZJgF6d9wZ5yz7l3x8jJY2S9z6k3xKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><script type="importmap">
+{
+  "imports": {
+    "@material/web/": "https://esm.run/@material/web/"
+  }
+}
+</script>
+
+<!-- MD3 Web module -->
+<script type="module">
+  import '@material/web/all.js';
+  import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside>
+  <div>FunWeb</div>
+   <a href="index.html">Home</a>
+  <a href="explore.html" class="selected">Motion</a>
+  <a href="FORCE.HTML">Force</a>
+  <a href="MASS.HTML">Mass</a>
+  <a href="ACCELERATION.HTML">Acceleration</a>
+  <a href="ENERGY.HTML">Energy</a>
+  <a href="NEWTON.HTML">Newton’s Laws</a>
+</aside>
+
+<main>
+  <h1>Motion</h1>
+  <i>“Motion is the heart of Physics — it is the language that describes how and why things move.”</i>
+  <p>
+    Motion refers to the change in position of an object with respect to a reference point over time.
+    It occurs when an object changes its location, direction, or speed.
+    In Physics, motion is not only about “movement” but also about understanding how, why, and under what forces that movement occurs.
+  </p>
+
+ 
+  
+  
+  <h2>Sub-Concepts of Motion in the FunWeb System</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sub-Concept</th>
+        <th>Description</th>
+        <th>Connection to Other Nodes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Displacement</td>
+        <td>The shortest distance from the starting point to the final position of an object, considering direction.</td>
+        <td>Connected to Velocity and Acceleration because both depend on displacement and time.</td>
+      </tr>
+      <tr>
+        <td>Speed</td>
+        <td>The distance traveled per unit of time; a scalar quantity.</td>
+        <td>Related to Velocity, Time, and Distance.</td>
+      </tr>
+      <tr>
+        <td>Velocity</td>
+        <td>The rate of change of displacement; a vector quantity that includes both speed and direction.</td>
+        <td>Links to Acceleration and Force — since unbalanced forces change velocity.</td>
+      </tr>
+      <tr>
+        <td>Acceleration</td>
+        <td>The rate of change of velocity over time; indicates how motion is increasing, decreasing, or changing direction.</td>
+        <td>Connected to Force (via F = ma) and Mass.</td>
+      </tr>
+      <tr>
+        <td>Uniform Motion</td>
+        <td>Motion in which an object travels equal distances in equal time intervals — constant speed.</td>
+        <td>Connected to Newton’s First Law — motion remains constant without external force.</td>
+      </tr>
+      <tr>
+        <td>Non-Uniform Motion</td>
+        <td>Motion in which an object’s speed or direction changes — acceleration or deceleration occurs.</td>
+        <td>Directly linked to Force, Energy, and Newton’s Second Law.</td>
+      </tr>
+      <tr>
+        <td>Projectile Motion</td>
+        <td>Curved path of an object under gravity after being thrown.</td>
+        <td>Connects Motion, Force, and Energy, illustrating gravity’s effect.</td>
+      </tr>
+      <tr>
+        <td>Circular Motion</td>
+        <td>Motion around a fixed path with constant speed but changing direction.</td>
+        <td>Connects Centripetal Force and Acceleration.</td>
+      </tr>
+      <tr>
+        <td>Reference Point</td>
+        <td>The fixed point used to determine motion. Without it, movement cannot be measured.</td>
+        <td>Serves as a conceptual anchor for Displacement, Velocity, and Acceleration.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Mathematical Relationships</h2>
+  <p><strong>Speed:</strong> <code>Speed = Distance / Time</code></p>
+  <p><strong>Velocity:</strong> <code>Velocity = Displacement / Time</code></p>
+  <p><strong>Acceleration:</strong> <code>Acceleration = Change in Velocity / Time</code></p>
+  <p><strong>Newton’s Second Law:</strong> <code>F = m × a</code></p>
+
+  <h2>Real-Life Applications of Motion</h2>
+  <ul>
+    <li>Transportation Systems – Design vehicles, manage traffic, improve fuel efficiency.</li>
+    <li>Sports Physics – Players apply principles when throwing, kicking, or hitting objects.</li>
+    <li>Space Exploration – Rocket launches, orbits, and reentry depend on motion calculations.</li>
+    <li>Amusement Rides – Roller coasters rely on motion and energy transfer.</li>
+    <li>Everyday Observation – Walking, dropping objects, and driving cars illustrate motion.</li>
+  </ul>
+
+  <h2>Common Misconceptions About Motion</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Misconception</th>
+        <th>Clarification</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Objects in motion require continuous force to keep moving.</td>
+        <td>Incorrect — According to Newton’s First Law, objects remain in motion unless acted upon by an external force (friction, gravity).</td>
+      </tr>
+      <tr>
+        <td>Heavier objects fall faster than lighter ones.</td>
+        <td>False — In the absence of air resistance, all objects accelerate equally under gravity.</td>
+      </tr>
+      <tr>
+        <td>If velocity is zero, acceleration must also be zero.</td>
+        <td>Not always true — Acceleration can exist even at rest if velocity is about to change.</td>
+      </tr>
+      <tr>
+        <td>Circular motion at constant speed means no acceleration.</td>
+        <td>False — The object accelerates because its direction continuously changes.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</main>
+
+</body>
+</html>
