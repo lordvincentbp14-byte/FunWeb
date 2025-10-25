@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FunWeb - Explore Acceleration (MD3)</title>
+
+<!-- MD3 Web import map -->
+<script type="importmap">
+{
+  "imports": {
+    "@material/web/": "https://esm.run/@material/web/"
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5b2/RQd3hPiYo7n3v2/zyfXk4vJfM0uJrD0HRkg2ZZ9TfZJgF6d9wZ5yz7l3x8jJY2S9z6k3xKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- MD3 Web module -->
+<script type="module">
+  import '@material/web/all.js';
+  import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+
+<link rel="stylesheet" href="style.css">
+</style>
+</head>
+<body>
+
+<aside>
+  <div>FunWeb</div>
+   <a href="index.html">Home</a>
+  <a href="explore.html">Motion</a>
+  <a href="FORCE.HTML">Force</a>
+  <a href="MASS.HTML">Mass</a>
+  <a href="ACCELERATION.HTML" class="selected">Acceleration</a>
+  <a href="ENERGY.HTML">Energy</a>
+  <a href="NEWTON.HTML">Newton’s Laws</a>
+</aside>
+
+<main>
+  <h1>Acceleration</h1>
+  <i>“Acceleration measures how motion changes — the bridge between force and mass in the rhythm of movement.”</i>
+
+  <h2>Definition</h2>
+  <p>Acceleration is the rate at which an object’s velocity changes over time. It tells us how fast an object speeds up, slows down, or changes direction. The SI unit is meter per second squared (m/s²).</p>
+  <p>Mathematically: <code>a = Δv / Δt</code>, where <code>a</code> = acceleration, <code>Δv</code> = change in velocity, and <code>Δt</code> = change in time.</p>
+
+ 
+  <h2>Sub-Concepts of Acceleration</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sub-Concept</th>
+        <th>Description</th>
+        <th>Connection to Other Nodes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Uniform Acceleration</td>
+        <td>Constant change in velocity over time.</td>
+        <td>Connects Force ↔ Motion in Newton’s Laws</td>
+      </tr>
+      <tr>
+        <td>Non-Uniform Acceleration</td>
+        <td>Velocity changes irregularly.</td>
+        <td>Links Force, Motion, and Energy</td>
+      </tr>
+      <tr>
+        <td>Centripetal Acceleration</td>
+        <td>Acceleration toward the center of circular motion.</td>
+        <td>Connects Force ↔ Motion ↔ Energy in rotational dynamics</td>
+      </tr>
+      <tr>
+        <td>Free Fall</td>
+        <td>Acceleration due to gravity (~9.8 m/s² on Earth).</td>
+        <td>Connects Gravity ↔ Force ↔ Motion</td>
+      </tr>
+      <tr>
+        <td>Deceleration</td>
+        <td>Decrease in velocity over time (negative acceleration).</td>
+        <td>Links Force ↔ Friction ↔ Motion</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Mathematical Relationships</h2>
+  <p><strong>Basic Formula:</strong> <code>a = (v<sub>f</sub> - v<sub>i</sub>) / t</code></p>
+  <p><strong>Newton’s Second Law:</strong> <code>F = m × a</code> (acceleration depends on force and inversely on mass)</p>
+  <p><strong>Kinematic Equations (constant acceleration):</strong></p>
+  <ul>
+    <li><code>v<sub>f</sub> = v<sub>i</sub> + a t</code></li>
+    <li><code>s = v<sub>i</sub> t + 1/2 a t²</code></li>
+    <li><code>v<sub>f</sub>² = v<sub>i</sub>² + 2 a s</code></li>
+  </ul>
+
+  <h2>Real-Life Applications of Acceleration</h2>
+  <ul>
+    <li>Transportation: Cars, airplanes, trains use controlled acceleration.</li>
+    <li>Sports: Sprinters, cyclists, swimmers maximize acceleration for advantage.</li>
+    <li>Engineering: Roller coasters, elevators, robotics require precise acceleration control.</li>
+    <li>Astronomy: Planets orbit the Sun due to centripetal acceleration.</li>
+    <li>Everyday Life: Walking, riding vehicles, stopping suddenly all demonstrate acceleration.</li>
+  </ul>
+
+  <h2>Common Misconceptions About Acceleration</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Misconception</th>
+        <th>Correction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Acceleration only means speeding up.</td>
+        <td>Acceleration also occurs when slowing down or changing direction.</td>
+      </tr>
+      <tr>
+        <td>If speed is constant, there’s no acceleration.</td>
+        <td>Circular motion has acceleration even at constant speed due to direction change.</td>
+      </tr>
+      <tr>
+        <td>Heavier objects accelerate faster.</td>
+        <td>Acceleration depends on net force and mass — not just weight.</td>
+      </tr>
+      <tr>
+        <td>An object in motion always has acceleration.</td>
+        <td>Uniform motion (constant velocity) has zero acceleration.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Connections Within the FunWeb Web</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Connected Node</th>
+        <th>Relationship to Acceleration</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Force</td>
+        <td>Directly proportional (<code>F = m × a</code>)</td>
+        <td>More force → greater acceleration</td>
+      </tr>
+      <tr>
+        <td>Mass</td>
+        <td>Inversely proportional (<code>a = F / m</code>)</td>
+        <td>Heavier objects accelerate less for the same force</td>
+      </tr>
+      <tr>
+        <td>Motion</td>
+        <td>Change in velocity defines motion type</td>
+        <td>Acceleration determines whether motion increases or decreases</td>
+      </tr>
+      <tr>
+        <td>Energy</td>
+        <td>Work done causes acceleration → kinetic energy</td>
+        <td><code>KE = 1/2 m v²</code></td>
+      </tr>
+      <tr>
+        <td>Gravity</td>
+        <td>Causes acceleration in free fall</td>
+        <td><code>a = g ≈ 9.8 m/s²</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+</main>
+
+</body>
+</html>

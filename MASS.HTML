@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FunWeb - Explore Mass (MD3)</title>
+
+<!-- MD3 Web import map -->
+<script type="importmap">
+{
+  "imports": {
+    "@material/web/": "https://esm.run/@material/web/"
+  }
+}
+</script>
+
+<!-- MD3 Web module -->
+<script type="module">
+  import '@material/web/all.js';
+  import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5b2/RQd3hPiYo7n3v2/zyfXk4vJfM0uJrD0HRkg2ZZ9TfZJgF6d9wZ5yz7l3x8jJY2S9z6k3xKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside>
+  <div>FunWeb</div>
+    <a href="index.html">Home</a>
+  <a href="explore.html">Motion</a>
+  <a href="FORCE.HTML">Force</a>
+  <a href="MASS.HTML" class="selected">Mass</a>
+  <a href="ACCELERATION.HTML">Acceleration</a>
+  <a href="ENERGY.HTML">Energy</a>
+  <a href="NEWTON.HTML">Newton’s Laws</a>
+</aside>
+
+<main>
+  <h1>Mass</h1>
+  <i>“Mass anchors the universe — it resists motion, shapes gravity, and defines the balance of force.”</i>
+
+  <h2>Definition</h2>
+  <p>Mass is the amount of matter contained in an object. It determines how much an object resists changes in its motion when a force is applied. It is a scalar quantity, meaning it has magnitude but no direction.</p>
+  <p>The SI unit of mass is the kilogram (kg). Unlike weight, which depends on gravity, mass remains constant everywhere in the universe. Mass doesn’t change — whether you’re on Earth, the Moon, or Mars, your mass stays the same, but your weight changes.</p>
+
+  
+  
+  <h2>Sub-Concepts of Mass</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sub-Concept</th>
+        <th>Description</th>
+        <th>Connection to Other Nodes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Inertia</td>
+        <td>The tendency of an object to resist change in motion.</td>
+        <td>Connects Mass ↔ Force ↔ Motion (Newton’s First Law)</td>
+      </tr>
+      <tr>
+        <td>Weight</td>
+        <td>The gravitational force acting on a mass. <code>W = m × g</code></td>
+        <td>Connects Mass ↔ Gravity ↔ Force</td>
+      </tr>
+      <tr>
+        <td>Gravitational Mass</td>
+        <td>Determines the strength of gravitational attraction.</td>
+        <td>Links Gravity, Force, and Energy</td>
+      </tr>
+      <tr>
+        <td>Inertial Mass</td>
+        <td>Determines resistance to acceleration when a force is applied.</td>
+        <td>Links Force and Acceleration</td>
+      </tr>
+      <tr>
+        <td>Density</td>
+        <td>Mass per unit volume <code>ρ = m / V</code></td>
+        <td>Connects Mass ↔ Volume ↔ Matter</td>
+      </tr>
+      <tr>
+        <td>Conservation of Mass</td>
+        <td>Mass cannot be created or destroyed in a closed system.</td>
+        <td>Links Energy, Matter, and Chemical Changes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Mathematical Relationships</h2>
+  <p><strong>Newton’s Second Law:</strong> <code>F = m × a</code></p>
+  <p><strong>Weight:</strong> <code>W = m × g</code></p>
+  <p><strong>Density:</strong> <code>ρ = m / V</code></p>
+
+  <h2>Real-Life Applications of Mass</h2>
+  <ul>
+    <li>Transportation: Heavier vehicles require stronger engines and greater force to accelerate.</li>
+    <li>Sports: Athletes manipulate mass and force — e.g., baseball vs. shot put.</li>
+    <li>Space Exploration: Rocket fuel calculations depend on total launch mass.</li>
+    <li>Engineering: Bridge and building designs rely on precise mass distribution.</li>
+    <li>Daily Life: Carrying groceries, pushing furniture, or lifting luggage demonstrates mass effects.</li>
+  </ul>
+
+  <h2>Common Misconceptions About Mass</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Misconception</th>
+        <th>Correction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mass and weight are the same thing.</td>
+        <td>Weight depends on gravity; mass remains constant.</td>
+      </tr>
+      <tr>
+        <td>Heavier objects fall faster.</td>
+        <td>All objects accelerate equally in a vacuum.</td>
+      </tr>
+      <tr>
+        <td>Mass affects shape or size directly.</td>
+        <td>Mass is amount of matter; volume is space occupied.</td>
+      </tr>
+      <tr>
+        <td>Objects at rest have no mass.</td>
+        <td>Mass exists regardless of motion.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Connections Within the FunWeb Web</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Connected Node</th>
+        <th>Relationship to Mass</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Force</td>
+        <td>Force = Mass × Acceleration</td>
+        <td>More mass requires more force to change motion.</td>
+      </tr>
+      <tr>
+        <td>Motion</td>
+        <td>Mass resists change in motion (inertia)</td>
+        <td>Heavy objects are harder to start or stop.</td>
+      </tr>
+      <tr>
+        <td>Acceleration</td>
+        <td>Inversely proportional to mass</td>
+        <td>The greater the mass, the smaller the acceleration for the same force.</td>
+      </tr>
+      <tr>
+        <td>Energy</td>
+        <td>Related via kinetic and potential energy</td>
+        <td><code>KE = 1/2 m v²</code>, <code>PE = m g h</code></td>
+      </tr>
+      <tr>
+        <td>Gravity</td>
+        <td>Directly proportional to mass</td>
+        <td>More mass → stronger gravitational attraction</td>
+      </tr>
+      <tr>
+        <td>Work</td>
+        <td>Work depends partly on force required to move mass</td>
+        <td><code>W = F × d</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+</main>
+
+</body>
+</html>

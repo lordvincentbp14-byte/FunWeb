@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FunWeb - Newton’s Laws of Motion (MD3)</title>
+
+<!-- MD3 Web import map -->
+<script type="importmap">
+{
+  "imports": {
+    "@material/web/": "https://esm.run/@material/web/"
+  }
+}
+</script>
+
+<!-- MD3 Web module -->
+<script type="module">
+  import '@material/web/all.js';
+  import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5b2/RQd3hPiYo7n3v2/zyfXk4vJfM0uJrD0HRkg2ZZ9TfZJgF6d9wZ5yz7l3x8jJY2S9z6k3xKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<aside>
+  <div>FunWeb</div>
+   <a href="index.html">Home</a>
+  <a href="explore.html">Motion</a>
+  <a href="FORCE.HTML">Force</a>
+  <a href="MASS.HTML">Mass</a>
+  <a href="ACCELERATION.HTML">Acceleration</a>
+  <a href="ENERGY.HTML">Energy</a>
+  <a href="NEWTONS-LAWS.HTML" class="selected">Newton’s Laws</a>
+</aside>
+
+<main>
+  <h1>Newton’s Laws of Motion</h1>
+  <i>“The foundation of all motion — explaining how and why objects move, stop, and react.”</i>
+
+  <h2>Definition</h2>
+  <p>Newton’s Laws of Motion are three fundamental principles that describe the relationship between force, motion, and mass. They serve as the backbone of classical mechanics, connecting Force, Mass, Acceleration, and Motion within the FunWeb system.</p>
+
+  <h2>Newton’s First Law: Law of Inertia</h2>
+  <p>“An object at rest stays at rest, and an object in motion stays in motion with the same speed and direction unless acted upon by an unbalanced external force.”</p>
+  <p><strong>Mathematical Expression:</strong> <code>ΣF = 0 ⇒ a = 0</code></p>
+  <p><strong>Examples:</strong> A passenger lurches forward when a tricycle stops; a ball continues rolling until friction slows it.</p>
+  <p><strong>FunWeb Integration:</strong> Inertia Node connects Force and Motion; balanced forces keep motion lines steady.</p>
+
+  <h2>Newton’s Second Law: Law of Acceleration</h2>
+  <p>“The acceleration of an object depends directly on the net force acting upon it and inversely on its mass.”</p>
+  <p><strong>Formula:</strong> <code>F = m × a</code></p>
+  <p><strong>Examples:</strong> Pushing an empty cart vs. a loaded one; a baseball accelerates faster than a bowling ball with the same force.</p>
+  <p><strong>FunWeb Integration:</strong> Force–Mass–Acceleration triangle; increasing mass thickens strands, increasing force pulses motion nodes faster.</p>
+
+  <h2>Newton’s Third Law: Law of Action and Reaction</h2>
+  <p>“For every action, there is an equal and opposite reaction.”</p>
+  <p><strong>Formula:</strong> <code>F_AB = - F_BA</code></p>
+  <p><strong>Examples:</strong> Jumping pushes the ground down, ground pushes you up; rockets push exhaust gases downward to move upward.</p>
+  <p><strong>FunWeb Integration:</strong> Action–Reaction Strand links Force and Energy nodes; pulling one node lights the opposite node.</p>
+
+  <h2>Relationships Between Newton’s Laws and Other Nodes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Connected Node</th>
+        <th>Relationship</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Force</td>
+        <td>Core cause of motion changes</td>
+        <td>All three laws revolve around the application and effect of forces</td>
+      </tr>
+      <tr>
+        <td>Mass</td>
+        <td>Determines resistance to acceleration</td>
+        <td>Higher mass → lower acceleration (Second Law)</td>
+      </tr>
+      <tr>
+        <td>Motion</td>
+        <td>Result or absence of force</td>
+        <td>Described by inertia and acceleration</td>
+      </tr>
+      <tr>
+        <td>Energy</td>
+        <td>Work done via force creates energy transfer</td>
+        <td>Work–energy link underlies motion</td>
+      </tr>
+      <tr>
+        <td>Acceleration</td>
+        <td>Direct outcome of force</td>
+        <td>Quantified in Second Law</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Common Misconceptions</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Misconception</th>
+        <th>FunWeb Clarification</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>If an object is moving, there must be a force acting on it.</td>
+        <td>Motion can continue without force; only changes in motion require force.</td>
+      </tr>
+      <tr>
+        <td>Heavier objects fall faster than lighter ones.</td>
+        <td>All objects accelerate equally in free fall (ignoring air resistance).</td>
+      </tr>
+      <tr>
+        <td>Action and reaction cancel each other.</td>
+        <td>They act on different objects — they don’t cancel.</td>
+      </tr>
+      <tr>
+        <td>Objects stop because forces stop acting.</td>
+        <td>They stop because other forces (like friction) act against motion.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Constructivist Learning Applications</h2>
+  <ul>
+    <li><strong>The Cart Challenge:</strong> Students push carts of different masses to observe F = ma.</li>
+    <li><strong>Inertia Investigation:</strong> Objects on a rolling cart continue moving when the cart stops, illustrating the First Law.</li>
+    <li><strong>Balloon Rocket Experiment:</strong> Balloons on a string demonstrate action-reaction pairs (Third Law).</li>
+  </ul>
+
+  <h2>Real-Life Applications</h2>
+  <ul>
+    <li>Transportation: Braking, acceleration, collisions</li>
+    <li>Sports: Force generation and control</li>
+    <li>Space Exploration: Rockets, satellite motion</li>
+    <li>Engineering: Vehicle and safety system design</li>
+    <li>Everyday Life: Walking, jumping, driving</li>
+  </ul>
+
+  <h2>FunWeb Context & Reflective Prompts</h2>
+  <p>In FunWeb, Newton’s Laws form the Force-Motion Core. The First Law stabilizes nodes, the Second Law adjusts connection strength, and the Third Law mirrors forces. Students explore dynamically, constructing understanding through experience and reflection.</p>
+  <ul>
+    <li>What happens to motion if there is no net force?</li>
+    <li>How does changing mass affect acceleration?</li>
+    <li>Why don’t action and reaction forces cancel each other out?</li>
+    <li>How do Newton’s Laws explain walking or driving?</li>
+  </ul>
+
+  <h2>Summary</h2>
+  <p>Newton’s Laws connect Force, Mass, Motion, Energy, and Acceleration in a cohesive network. Each law provides a layer of understanding, forming a visual, interactive web that turns abstract physics into tangible learning.</p>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FunWeb - Explore Force (MD3)</title>
+
+<!-- MD3 Web import map -->
+<script type="importmap">
+{
+  "imports": {
+    "@material/web/": "https://esm.run/@material/web/"
+  }
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5b2/RQd3hPiYo7n3v2/zyfXk4vJfM0uJrD0HRkg2ZZ9TfZJgF6d9wZ5yz7l3x8jJY2S9z6k3xKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- MD3 Web module -->
+<script type="module">
+  import '@material/web/all.js';
+  import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside>
+  <div>FunWeb</div>
+   <a href="index.html">Home</a>
+  <a href="explore.html">Motion</a>
+  <a href="about.html" class="selected">Force</a>
+  <a href="MASS.HTML">Mass</a>
+  <a href="ACCELERATION.HTML">Acceleration</a>
+  <a href="ENERGY.HTML">Energy</a>
+  <a href="NEWTON.HTML">Newton’s Laws</a>
+</aside>
+
+<main>
+  <h1>Force</h1>
+  <i>“Force is the invisible link that changes motion, starts motion, or stops motion — the heartbeat of every interaction in Physics.”</i>
+
+  <h2>Definition</h2>
+  <p>Force is defined as a push or pull exerted on an object that causes it to move, stop, or change its shape or direction. It has both magnitude and direction, making it a vector quantity.</p>
+  <p>In simple terms, force is the cause of motion. It explains why objects move, accelerate, slow down, or remain at rest. Without force, there is no change in motion — only stillness.</p>
+
+  
+  <p>Through collaboration and guided questioning, learners progress from everyday observation to scientific understanding, building a personal “mental web” of how forces influence everything they see and do. Students are not told what force is — they discover it through experience, visualization, and reflection.</p>
+
+  <h2>Sub-Concepts of Force in the FunWeb System</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sub-Concept</th>
+        <th>Description</th>
+        <th>Connection to Other Nodes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Balanced Force</td>
+        <td>When all forces acting on an object are equal; no change in motion occurs.</td>
+        <td>Connects to Newton’s First Law and Motion (at rest or constant velocity).</td>
+      </tr>
+      <tr>
+        <td>Unbalanced Force</td>
+        <td>When forces acting on an object are unequal; causes acceleration.</td>
+        <td>Directly linked to Acceleration, Mass, and Motion.</td>
+      </tr>
+      <tr>
+        <td>Frictional Force</td>
+        <td>A resistive force that opposes motion between surfaces in contact.</td>
+        <td>Connects Motion, Energy (heat loss), and Work.</td>
+      </tr>
+      <tr>
+        <td>Gravitational Force</td>
+        <td>Attraction between two masses due to gravity.</td>
+        <td>Links Mass, Energy (potential), and Motion (free fall, orbit).</td>
+      </tr>
+      <tr>
+        <td>Normal Force</td>
+        <td>The support force exerted by a surface perpendicular to an object resting on it.</td>
+        <td>Balances Gravitational Force; linked to Equilibrium.</td>
+      </tr>
+      <tr>
+        <td>Tension Force</td>
+        <td>Force transmitted through a string, rope, or cable.</td>
+        <td>Connects to Motion, Mass, and Newton’s Laws.</td>
+      </tr>
+      <tr>
+        <td>Applied Force</td>
+        <td>A direct push or pull from a person or object.</td>
+        <td>Connects with Work, Power, and Acceleration.</td>
+      </tr>
+      <tr>
+        <td>Air Resistance</td>
+        <td>A type of friction that acts against motion through air.</td>
+        <td>Connects Motion, Energy, and Acceleration.</td>
+      </tr>
+      <tr>
+        <td>Net Force (ΣF)</td>
+        <td>The total force acting on an object after all individual forces are considered.</td>
+        <td>Links Force, Mass, and Acceleration using F = ma.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Mathematical Relationship</h2>
+  <p><strong>Newton’s Second Law:</strong> <code>F = m × a</code></p>
+  <p>Where:</p>
+  <ul>
+    <li><strong>F</strong> = Force (Newtons, N)</li>
+    <li><strong>m</strong> = Mass (kg)</li>
+    <li><strong>a</strong> = Acceleration (m/s²)</li>
+  </ul>
+
+  <h2>Real-Life Applications of Force</h2>
+  <ul>
+    <li>Transportation – Engines and brakes apply forces to move or stop vehicles.</li>
+    <li>Sports – Kicking a ball, hitting a shuttlecock, or throwing a javelin.</li>
+    <li>Construction – Cranes use tension and applied forces to lift heavy materials.</li>
+    <li>Everyday Life – Opening doors, walking, or squeezing toothpaste involves force.</li>
+    <li>Space Science – Rocket thrust demonstrates Newton’s Third Law: every action has an equal and opposite reaction.</li>
+  </ul>
+
+  <h2>Common Misconceptions About Force</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Misconception</th>
+        <th>Correction through FunWeb</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Objects move only when a force is continuously applied.</td>
+        <td>Wrong — motion continues even without ongoing force, as long as no friction or external resistance acts (Newton’s First Law).</td>
+      </tr>
+      <tr>
+        <td>Heavier objects fall faster because they have more force.</td>
+        <td>Incorrect — in a vacuum, all objects fall at the same acceleration due to gravity.</td>
+      </tr>
+      <tr>
+        <td>If no motion occurs, there is no force.</td>
+        <td>False — balanced forces can act in opposite directions, resulting in no motion.</td>
+      </tr>
+      <tr>
+        <td>Force is energy.</td>
+        <td>Misunderstanding — force causes changes in motion, while energy is the capacity to do work.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Connections Within the FunWeb Web</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Connected Node</th>
+        <th>Relationship to Force</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Motion</td>
+        <td>Force causes or changes motion.</td>
+        <td>Unbalanced forces start, stop, or alter motion.</td>
+      </tr>
+      <tr>
+        <td>Mass</td>
+        <td>Heavier objects resist motion more.</td>
+        <td>The same force causes less acceleration on heavier objects.</td>
+      </tr>
+      <tr>
+        <td>Acceleration</td>
+        <td>Directly proportional to force.</td>
+        <td>Increasing force increases acceleration if mass is constant.</td>
+      </tr>
+      <tr>
+        <td>Energy</td>
+        <td>Force transfers or transforms energy.</td>
+        <td>Work = Force × Distance; motion converts potential to kinetic energy.</td>
+      </tr>
+      <tr>
+        <td>Newton’s Laws</td>
+        <td>Explain how forces behave.</td>
+        <td>Laws define the relationships between force, motion, and interaction.</td>
+      </tr>
+      <tr>
+        <td>Friction</td>
+        <td>Opposes force and reduces efficiency.</td>
+        <td>Explains why motion slows or energy is lost as heat.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</main>
+
+</body>
+</html>
