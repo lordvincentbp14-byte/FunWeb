@@ -3,31 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FunWeb - Sidebar with Icons</title>
+<title>FunWeb - Right Side Background</title>
 
 <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5b2/RQd3hPiYo7n3v2/zyfXk4vJfM0uJrD0HRkg2ZZ9TfZJgF6d9wZ5yz7l3x8jJY2S9z6k3xKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style2.css" >
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
 
+/* Sidebar */
+aside {
+   
+    padding: 20px;
+    width: 200px;
+    color: #fff;
+}
+
+/* Main content (right side) with background image */
+main {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    background-image: url('image12.png'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1, h2 {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+</style>
 
 </head>
 <body>
 
 <aside>
-<div>FunWeb</div>
- 
-  <a href="explore.html">Motion</a>
-  <a href="FORCE.HTML">Force</a>
-  <a href="MASS.HTML">Mass</a>
-  <a href="ACCELERATION.HTML">Acceleration</a>
-  <a href="ENERGY.HTML">Energy</a>
-  <a href="NEWTONS-LAWS.HTML"><i class="fas fa-project-diagram"></i> Newton’s Laws</a>
+  <div>FunWeb</div>
+  <a href="explore.html">Explore!</a>
+  <a href="web.html">Web</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
 </aside>
 
 <main>
   <h1>Welcome to FunWeb</h1>
-  <p>Select a topic from the sidebar to explore concepts in Physics.</p>
+  <p>In FunWeb, the word <strong>“Web”</strong> captures three dimensions of learning:</p>
+  
+  <ul>
+    <li>It’s a <strong>Website</strong> that connects learners through technology.</li>
+    <li>A <strong>concept Web</strong> of relationships that mirrors how Physics concepts depend on one another.</li>
+    <li>The <strong>FunWeb</strong> (Fundamentals of Physics Web) is conceptually designed to resemble a real web, where each strand represents a fundamental Physics concept such as motion, force, or energy.</li>
+  </ul>
+
+  <p>In a real web, the strength and stability of the entire structure depend on the integrity of every individual strand. If one strand is missing or weak, the entire web loses its balance and resilience.</p>
+
+  <h2>What FUN Means in FunWeb</h2>
+  <p>In FunWeb, <strong>“FUN”</strong> means more than just entertainment. It stands for:</p>
+  <ul>
+    <li>Enjoyable</li>
+    <li>Fundamentals of Physics</li>
+    <li>Functional learning</li>
+  </ul>
+  <p>Students don’t just memorize Physics; they explore it, connect it, and live it.</p>
+
+  <h2>Conceptual Connections</h2>
+  <p>Each Physics concept is interconnected; understanding one supports and reinforces comprehension of the others. When a student fails to grasp even a single concept, their overall understanding of Physics becomes fragile and incomplete. By visualizing knowledge as a web of relationships rather than isolated topics, FunWeb helps learners recognize the importance of conceptual connections, ensuring that their learning structure remains strong, coherent, and enduring.</p>
+
+  <h2>Dive In!</h2>
+  <p>Dive into the world of Physics - where every concept connects, every idea has meaning, and learning is both fun and fundamental. Click <strong>“Explore!”</strong> to start learning and build your own web of understanding.</p>
 </main>
+
 
 </body>
 </html>
+

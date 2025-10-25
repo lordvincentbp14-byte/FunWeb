@@ -9,7 +9,7 @@ body {
 /* Sidebar styling */
 aside {
   width: 220px;
-  background-color: #000269cc;
+  background-color: #101168cc;
   color: white;
   padding: 16px;
   display: flex;
@@ -87,4 +87,5 @@ i {
 }
 div {
     font-size: 40px;
+    font-family: cooper;
 }
