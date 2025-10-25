@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FunWeb - Explore Energy (MD3)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5b2/RQd3hPiYo7n3v2/zyfXk4vJfM0uJrD0HRkg2ZZ9TfZJgF6d9wZ5yz7l3x8jJY2S9z6k3xKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- MD3 Web import map -->
+<script type="importmap">
+{
+  "imports": {
+    "@material/web/": "https://esm.run/@material/web/"
+  }
+}
+</script>
+
+<!-- MD3 Web module -->
+<script type="module">
+  import '@material/web/all.js';
+  import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside>
+  <div>FunWeb</div>
+ <a href="index.html">Home</a>
+  <a href="explore.html">Motion</a>
+  <a href="FORCE.HTML">Force</a>
+  <a href="MASS.HTML">Mass</a>
+  <a href="ACCELERATION.HTML">Acceleration</a>
+  <a href="ENERGY.HTML" class="selected">Energy</a>
+  <a href="NEWTON.HTML">Newton’s Laws</a>
+</aside>
+
+<main>
+  <h1>Energy</h1>
+  <i>“Energy is the power to cause change — the invisible thread that weaves motion, force, and matter together within the FunWeb.”</i>
+
+  <h2>Definition</h2>
+  <p>Energy is the ability to do work or cause change. It exists in many forms — mechanical, potential, kinetic, thermal, electrical, and chemical — representing the capacity to make something happen.</p>
+  <p>Work and energy are related: <code>W = F × d</code>, where <code>W</code> is work, <code>F</code> is force, and <code>d</code> is displacement. The SI unit of energy is joule (J), where <code>1 J = 1 N·m</code>.</p>
+
+  
+  <h2>Sub-Concepts of Energy</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Sub-Concept</th>
+        <th>Description</th>
+        <th>Connection to Other Nodes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Kinetic Energy (KE)</td>
+        <td>Energy due to motion, increases with mass and speed. <code>KE = 1/2 m v²</code></td>
+        <td>Connects Mass ↔ Motion ↔ Acceleration</td>
+      </tr>
+      <tr>
+        <td>Potential Energy (PE)</td>
+        <td>Stored energy due to position. <code>PE = m g h</code></td>
+        <td>Links Mass ↔ Gravity ↔ Height</td>
+      </tr>
+      <tr>
+        <td>Mechanical Energy</td>
+        <td>Sum of kinetic and potential energy in a system.</td>
+        <td>Connects Force ↔ Work ↔ Motion</td>
+      </tr>
+      <tr>
+        <td>Thermal Energy</td>
+        <td>Energy from particle movement; linked to temperature.</td>
+        <td>Links Energy ↔ Matter ↔ Heat</td>
+      </tr>
+      <tr>
+        <td>Electrical Energy</td>
+        <td>Movement of charges through a conductor.</td>
+        <td>Connects Force ↔ Motion ↔ Electricity</td>
+      </tr>
+      <tr>
+        <td>Law of Conservation of Energy</td>
+        <td>Energy cannot be created or destroyed — only transformed.</td>
+        <td>Links all nodes; Energy Web Backbone</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Mathematical Relationships</h2>
+  <ul>
+    <li>Kinetic Energy: <code>KE = 1/2 m v²</code> (depends on mass and velocity; doubles in speed → quadruples KE)</li>
+    <li>Potential Energy: <code>PE = m g h</code> (depends on mass, gravitational acceleration, and height)</li>
+    <li>Mechanical Energy Conservation: <code>ME = KE + PE = constant</code></li>
+    <li>Work-Energy Theorem: <code>W = ΔKE</code></li>
+  </ul>
+
+  <h2>Real-Life Applications of Energy</h2>
+  <ul>
+    <li>Transportation: Fuel energy → mechanical energy in engines</li>
+    <li>Sports: Chemical energy in food → kinetic energy in motion</li>
+    <li>Roller Coasters: PE at top → KE as it descends</li>
+    <li>Electric Circuits: Electrical energy powers motion and light</li>
+    <li>Renewable Sources: Solar, wind, and hydro convert natural energy to usable power</li>
+  </ul>
+
+  <h2>Connections Within the FunWeb Web</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Connected Node</th>
+        <th>Relationship to Energy</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Force</td>
+        <td>Force does work, transferring energy. <code>W = F × d</code></td>
+        <td>Force → Energy</td>
+      </tr>
+      <tr>
+        <td>Motion</td>
+        <td>Motion manifests kinetic energy. <code>KE = 1/2 m v²</code></td>
+        <td>Motion → Energy</td>
+      </tr>
+      <tr>
+        <td>Mass</td>
+        <td>Heavier objects store/use more energy. <code>PE = m g h</code></td>
+        <td>Mass → Energy</td>
+      </tr>
+      <tr>
+        <td>Acceleration</td>
+        <td>Faster acceleration increases KE. <code>ΔKE = W</code></td>
+        <td>Acceleration → Energy</td>
+      </tr>
+      <tr>
+        <td>Gravity</td>
+        <td>Converts PE to motion energy. <code>PE ↔ KE</code></td>
+        <td>Gravity → Energy</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Common Misconceptions About Energy</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Misconception</th>
+        <th>FunWeb Clarification</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Energy is only about movement.</td>
+        <td>Energy also exists in stored and potential forms.</td>
+      </tr>
+      <tr>
+        <td>Energy disappears when an object stops.</td>
+        <td>Energy transforms into other forms, e.g., heat or sound.</td>
+      </tr>
+      <tr>
+        <td>Heavier objects always have more energy.</td>
+        <td>Depends on both mass and velocity (KE) or height (PE).</td>
+      </tr>
+      <tr>
+        <td>Work and energy are unrelated.</td>
+        <td>Work transfers energy between systems.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</main>
+</body>
+</html>

@@ -1,52 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FunWeb</title>
-
-<!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-
 <style>
-/* Header text stroke */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+    background: url("image1.jpg") no-repeat center center fixed;
+    background-size: cover; /* makes the image fill the whole screen */
+    color: black;
+}
+
+
+/* centers the grid container only */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
+    justify-content: center; /* centers grid horizontally */
+    text-align: center;
+    margin-top: 100px; /* adjust spacing from top */
+}
+
+
+.parent div {
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: 0.3s;
+}
+
+
+.parent div:hover {
+    background: #e3f2fd;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+/* --- Header Animation --- */
 header h1 {
     text-align: center;
     padding-top: 300px;
     font-size: 50px;
     color: white;
     -webkit-text-stroke: 1px black;
-    font-family: 'Arial Black', sans-serif;
     transition: transform 0.4s ease, text-shadow 0.4s ease;
 }
 
+
+/* --- Header Hover Effect --- */
 header h1:hover {
     transform: scale(1.2);
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
+a {
+    font-weight: bold;
+}
 </style>
-</head>
-<body class="bg-cover bg-center" style="background-image: url('image1.jpg'); font-family: 'Arial Black', sans-serif;">
+
 
 <header>
     <h1>FunWeb</h1>
 </header>
 
-<!-- Grid -->
-<div class="grid grid-cols-2 gap-5 justify-center mt-24 w-max mx-auto">
-    <div class="w-[150px] h-[150px] bg-white/90 rounded-xl flex items-center justify-center text-2xl font-[Arial Black] shadow-md transition transform hover:scale-110 hover:bg-blue-100 hover:shadow-2xl cursor-pointer">
-        <a href="" class="w-full h-full flex items-center justify-center">Explore!</a>
-    </div>
-    <div class="w-[150px] h-[150px] bg-white/90 rounded-xl flex items-center justify-center text-2xl font-[Arial Black] shadow-md transition transform hover:scale-110 hover:bg-blue-100 hover:shadow-2xl cursor-pointer">
-        <a href="" class="w-full h-full flex items-center justify-center">About</a>
-    </div>
-    <div class="w-[150px] h-[150px] bg-white/90 rounded-xl flex items-center justify-center text-2xl font-[Arial Black] shadow-md transition transform hover:scale-110 hover:bg-blue-100 hover:shadow-2xl cursor-pointer">
-        <a href="" class="w-full h-full flex items-center justify-center">Topics</a>
-    </div>
-    <div class="w-[150px] h-[150px] bg-white/90 rounded-xl flex items-center justify-center text-2xl font-[Arial Black] shadow-md transition transform hover:scale-110 hover:bg-blue-100 hover:shadow-2xl cursor-pointer">
-        <a href="" class="w-full h-full flex items-center justify-center">Contact</a>
-    </div>
+
+<div class="parent">
+    <div class="div1"><a href="explore.html">Explore!</a></div>
+    <div class="div2"><a href="">Web</a></div>
+    <div class="div3"><a href="">About</a></div>
+    <div class="div4"><a href="">Contact</a></div>
 </div>
 
-</body>
-</html>
+
+
