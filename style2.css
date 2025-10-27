@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Filled');
+
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'segoe ui', sans-serif;
   margin: 0;
   display: flex;
   min-height: 100vh;
@@ -9,7 +11,7 @@ body {
 /* Sidebar styling */
 aside {
   width: 220px;
-  background-color: #000269cc; /* darker blue */
+  background-color: #705575;
   color: white;
   padding: 16px;
   display: flex;
@@ -17,22 +19,27 @@ aside {
   gap: 16px;
 }
 
-/* Sidebar links */
+aside md-elevation {
+  padding: 8px;
+}
+
 aside a {
   color: white;
   text-decoration: none;
   padding: 8px;
   border-radius: 8px;
   display: block;
-  transition: all 0.3s ease; /* smooth hover transition */
+}
+/* Sidebar link hover effect */
+aside a:hover {
+     /* Text color changes on hover */
+  background-color: #573e5c;  /* Optional: subtle background change */
+  transition: all 0.3s ease;
 }
 
-aside a:hover {
-  background-color: #1a1a7acc; /* subtle background change on hover */
-}
 
 aside a.selected {
-  background-color: #8d78ff;
+  background-color: #3f2844;
 }
 
 /* Main content */
@@ -44,12 +51,10 @@ main {
   box-shadow: 0 0 10px rgba(75, 26, 26, 0.1);
 }
 
-/* Headings */
 h1, h2, h3 {
-  color: #000000;
+  
 }
 
-/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -70,23 +75,23 @@ th {
   color: #fff;
 }
 
-/* Code blocks */
 code {
   background-color: #eee;
   padding: 2px 4px;
   border-radius: 4px;
 }
 
-/* Italic info text */
 i {
   display: block;
   margin-bottom: 16px;
   font-style: italic;
   color: #555;
 }
-
-/* Only target specific div for large font instead of all divs */
 div {
+    font-size: 40px;
+    font-family: cooper;
+}
+.sidebar_title {
+  text-align: left;
   font-size: 40px;
 }
-
