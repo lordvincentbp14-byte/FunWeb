@@ -3,53 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FunWeb - Right Side Background</title>
+<title>FunWeb - Home Page</title>
 
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5b2/RQd3hPiYo7n3v2/zyfXk4vJfM0uJrD0HRkg2ZZ9TfZJgF6d9wZ5yz7l3x8jJY2S9z6k3xKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="style2.css" >
+<!-- Google Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 <style>
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Header with hamburger */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+}
+
+header h1 {
+  flex: 1;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: 30px;
 }
 
 /* Sidebar */
 aside {
-   
-    padding: 20px;
-    width: 200px;
-    color: #fff;
+  position: fixed;
+  top: 0;
+  left: -260px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+  z-index: 1000;
 }
 
-/* Main content (right side) with background image */
-main {
-    flex: 1;
-    padding: 20px;
-    color: #fff;
-    background-image: url('image12.png'); /* replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+aside.show {
+  left: 0;
 }
-h1, h2 {
+
+aside div {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+aside a {
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+aside a:hover {
+  background-color: #444;
+}
+
+aside a.selected {
+  background-color: #555;
+}
+
+.material-icons {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/* Overlay when sidebar is open */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 500;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 20px;
+  background-image: url('image12.png'); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1, h2, li, ul, p {
+  font-family: Archivo Black;
 }
 </style>
-
+<link rel="stylesheet" href="style2.css"
 </head>
 <body>
 
-<aside>
-  <div>FunWeb</div>
-  <a href="explore.html">Explore!</a>
-  <a href="web.html">Web</a>
-  <a href="contact.html">Contact</a>
-  <a href="about.html">About</a>
+<header>
+  <span class="material-icons hamburger" onclick="toggleSidebar()">menu</span>
+
+</header>
+
+<aside id="sidebar">
+  <div class="sidebar_title">FunWeb</div>
+  <a href="#" class="selected"><span class="material-icons">home</span> Home</a>
+  <a href="explore.html"><span class="material-icons">explore</span> Explore!</a>
+  <a href="web.html"><span class="material-icons">language</span> Web</a>
+  <a href="contact.html"><span class="material-icons">mail</span> Contact</a>
+  <a href="about.html"><span class="material-icons">info</span> About</a>
 </aside>
+
+<div id="overlay" class="overlay" onclick="toggleSidebar()"></div>
 
 <main>
   <h1>Welcome to FunWeb</h1>
@@ -79,7 +169,22 @@ h1, h2 {
   <p>Dive into the world of Physics - where every concept connects, every idea has meaning, and learning is both fun and fundamental. Click <strong>“Explore!”</strong> to start learning and build your own web of understanding.</p>
 </main>
 
+<script>
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  sidebar.classList.toggle('show');
+  overlay.classList.toggle('show');
+}
+
+// Add a key listener for 'M' or 'm'
+document.addEventListener('keydown', (event) => {
+  // Check if the pressed key is 'm' or 'M'
+  if (event.key.toLowerCase() === 'm') {
+    toggleSidebar();
+  }
+});
+</script>
 
 </body>
 </html>
-
