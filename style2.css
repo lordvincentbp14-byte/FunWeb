@@ -11,7 +11,7 @@ body {
 /* Sidebar styling */
 aside {
   width: 220px;
-  background-color: #705575;
+  background-color: #324370;
   color: white;
   padding: 16px;
   display: flex;
@@ -33,13 +33,13 @@ aside a {
 /* Sidebar link hover effect */
 aside a:hover {
      /* Text color changes on hover */
-  background-color: #573e5c;  /* Optional: subtle background change */
+  background-color: #2b56a5;;  /* Optional: subtle background change */
   transition: all 0.3s ease;
 }
 
 
 aside a.selected {
-  background-color: #3f2844;
+  background-color: #2b56a5;
 }
 
 /* Main content */
@@ -51,10 +51,8 @@ main {
   box-shadow: 0 0 10px rgba(75, 26, 26, 0.1);
 }
 
-h1, h2, h3 {
-  
-}
 
+  
 table {
   width: 100%;
   border-collapse: collapse;
@@ -89,7 +87,7 @@ i {
 }
 div {
     font-size: 40px;
-    font-family: cooper;
+    font-family: Archivo Black;
 }
 .sidebar_title {
   text-align: left;

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-
+@import url(https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap);
 .material-icons {
   font-size: 22px;
   vertical-align: middle;
@@ -18,7 +18,7 @@ body {
 /* Sidebar styling */
 aside {
   width: 220px;
-  background-color: #705575;
+  background-color: #324370;
   color: white;
   padding: 16px;
   display: flex;
@@ -40,13 +40,13 @@ aside a {
 /* Sidebar link hover effect */
 aside a:hover {
      /* Text color changes on hover */
-  background-color: #573e5c;  /* Optional: subtle background change */
+  background-color: #2b56a5;  /* Optional: subtle background change */
   transition: all 0.3s ease;
 }
 
 
 aside a.selected {
-  background-color: #3f2844;
+  background-color: #2b56a5;
 }
 
 /* Main content */
@@ -78,7 +78,7 @@ th, td {
 }
 
 th {
-  background-color: #705575;
+  background-color: #324370;
   color: #fff;
 }
 
@@ -96,5 +96,5 @@ i {
 }
 div {
     font-size: 40px;
-    font-family: cooper;
+    font-family: Archivo Black;
 }
