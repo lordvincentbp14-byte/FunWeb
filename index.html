@@ -143,6 +143,19 @@ h1, h2, li, ul, p {
 
 <main>
   <h1>Welcome to FunWeb</h1>
+<script>
+  const url = "https://api.counterapi.dev/v1/FunWeb/mainpage/incr";
+
+  fetch(url)
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById("visits").textContent = data.value;
+    });
+</script>
+<p>Total Visits: <span id="visits">Loading...</span></p>
+
+
+
   <p>In FunWeb, the word <strong>“Web”</strong> captures three dimensions of learning:</p>
   
   <ul>
@@ -177,13 +190,19 @@ function toggleSidebar() {
   overlay.classList.toggle('show');
 }
 
-// Add a key listener for 'M' or 'm'
+// Add a key listener for 'M' or spacebar
 document.addEventListener('keydown', (event) => {
-  // Check if the pressed key is 'm' or 'M'
-  if (event.key.toLowerCase() === 'm') {
+  const key = event.key.toLowerCase();
+
+  if (key === 'm' || event.code === 'Space') {
+    // Prevent spacebar from scrolling the page
+    if (event.code === 'Space') {
+      event.preventDefault();
+    }
     toggleSidebar();
   }
 });
+
 </script>
 
 </body>
